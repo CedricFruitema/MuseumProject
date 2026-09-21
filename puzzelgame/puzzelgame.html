@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <!-- Tekens zoals é en ë worden correct weergegeven -->
+    <meta charset="UTF-8">
+
+    <!-- Zorgt ervoor dat de game goed werkt op een tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Museum Schuifpuzzel</title>
+
+    <!-- CSS bestand koppelen -->
+    <link rel="stylesheet" href="puzzelgame.css">
+
+</head>
+
+<body>
+
+    <!-- Hoofdcontainer van de game -->
+    <main class="game">
+
+        <!-- Titel en uitleg -->
+        <header class="header">
+            <h1>Museum Schuifpuzzel</h1>
+            <p>Schuif de tegels naar de juiste plek.</p>
+        </header>
+
+        <!-- Voorbeeld van de afbeelding-->
+        <div class="preview-wrapper">
+            <span>Voorbeeld</span>
+            <img class="preview-image" src="museum.jpg" alt="puzzelgame/museum.jpg">
+        </div>
+
+        <!-- Hier wordt de puzzel geplaatst -->
+        <div class="puzzle-container" id="puzzleContainer">
+        </div>
+
+
+        <!-- Informatie onder de puzzel -->
+        <div class="game-footer">
+
+            <div class="moves">
+                Zetten:
+                <span id="moves">0</span>
+            </div>
+
+            <button id="resetButton">
+                Opnieuw
+            </button>
+
+        </div>
+
+
+        <!-- Melding wanneer de puzzel klaar is -->
+        <div class="win-message hidden" id="winMessage">
+
+            <h2>Puzzel voltooid!</h2>
+
+            <p>Goed gedaan!</p>
+
+            <button id="winResetButton">
+                Nog een keer
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript bestand koppelen -->
+    <script src="puzzelgame.js"></script>
+
+</body>
+</html>
